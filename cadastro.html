@@ -81,10 +81,10 @@
         <p>&copy; 2025 ONG Futuro Feliz - Todos os direitos reservados.</p>
     </footer>
 <script>
-    // Função genérica para aplicar máscaras
+    
     function aplicarMascara(input, mascara) {
         input.addEventListener('input', () => {
-            let valor = input.value.replace(/\D/g, ''); // remove tudo que não é número
+            let valor = input.value.replace(/\D/g, ''); 
             let novoValor = '';
             let i = 0;
 
@@ -103,12 +103,12 @@
         });
     }
 
-    // Seleciona os campos
+    
     const cpfInput = document.getElementById('cpf');
     const telefoneInput = document.getElementById('telefone');
     const cepInput = document.getElementById('cep');
 
-    // Aplica as máscaras
+    
     aplicarMascara(cpfInput, '###.###.###-##');
     aplicarMascara(telefoneInput, '(##) #####-####');
     aplicarMascara(cepInput, '#####-###');
